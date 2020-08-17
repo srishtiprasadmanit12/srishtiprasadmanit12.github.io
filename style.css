@@ -1,6 +1,12 @@
 body{
   background-color: black;
-  margin:80px;
+  margin:10%;
+
+}
+/*navbar*/
+.nav-link:hover{
+  color:red!important;
+  font-weight: bolder;
 
 }
 /* section first*/
@@ -12,6 +18,16 @@ img{
   width:40px;
 }
 
+.top-left:hover{
+color: yellow;
+font-weight: bold;
+}
+.portfolio:hover{
+  color: cyan;
+  font-weight: bold;
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.5rem;
+}
 .navbar{
   position:fixed;
   background-image: linear-gradient(to right,#6db9ef,#7ce08a);
@@ -32,8 +48,8 @@ h1{
 }
 h2{
   font-size: 2rem;
-
 }
+
 h4{
   font-family: 'Zilla Slab', serif;
   font-weight: 150px;
@@ -59,12 +75,22 @@ z-index: 0;
 }
 
 .ss{
-padding:80px;
+padding:8% ;
 }
 /* section second */
-.se{
-  padding:0 80px 80px 80px;
+#second{
+  text-align: center;
 }
+.card-img-top{
+
+  width:100%;
+  height:auto;
+  float:left;
+}
+.se{
+  padding:0 8% 8% 8%;
+}
+
 /*section third*/
 #third{
   background-color: black;
@@ -78,4 +104,8 @@ padding:80px;
 /*section fourth */
 .education{
   width: 50%;
+}
+.container{
+  font-family: 'Zilla Slab', serif;
+  color:black;
 }
