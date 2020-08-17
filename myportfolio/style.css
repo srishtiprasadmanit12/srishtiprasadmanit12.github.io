@@ -114,6 +114,7 @@ text-decoration: none;
 
 }
 .github:hover{
+  font-weight: bolder;
   text-decoration: underline;
   color:red;
 }
