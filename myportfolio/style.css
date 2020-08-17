@@ -109,3 +109,11 @@ padding:8% ;
   font-family: 'Zilla Slab', serif;
   color:black;
 }
+.github{
+text-decoration: none;
+
+}
+.github:hover{
+  text-decoration: underline;
+  color:red;
+}
