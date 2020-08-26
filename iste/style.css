@@ -1,0 +1,48 @@
+*{
+  margin:0;
+  padding:0;
+}
+html{
+  background-color: #251f44;
+  text-align: center;
+
+}
+h1{
+  color: white;
+  margin-bottom: 1%;
+  text-transform: uppercase;
+}
+.box{
+  margin-top:5%;
+
+}
+.box input[type="number"]{
+font-size: 1.2em;
+color:#004d00;
+font-weight:normal;
+
+}
+.box input[type="submit"],.box input[type="reset"]{
+  border:2px solid #2ecc71;
+  height:30px;
+  width:5%;
+  margin-top:2%;
+  text-align: center;
+  cursor: pointer;
+}
+.box input[type="submit"]:hover,.box input[type="reset"]:hover{
+
+background:#c3aed6;
+}
+table{
+  margin-left: 40%;
+  margin-top: 2%;
+  width:20%;
+
+}
+table,td{
+  border-color: #3c2946;
+  border-spacing: 2px;
+  border-style: ridge;
+  background-color: #8675a9;
+}
