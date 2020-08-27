@@ -7,49 +7,72 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="conatiner">
-      <form  class="box" onsubmit="myFunction(); return false; required">
+    <div class="container">
+      <form  class="box" onsubmit="myFunction(); return false; required" onreset="resetTable();">
         <h1>input <span> number</span></h1>
         <input type="number" id="numid" min=1 placeholder="enter a number"></br>
         <input type="submit" value="click here"/>
-        <input type="reset"  value="clear"/>
+        <input type="reset"  value="clear" id="reset"/>
       </form>
     </div>
  <table border="0" id="myTable">
-   <tr>
+<!-- <tr>
      <td bgcolor="yellow" width="50px" height="20px"> </td>
      <td bgcolor="yellow" width="50px" height="20px"> </td>
      <td bgcolor="yellow" width="50px" height="20px"> </td>
      <td bgcolor="yellow" width="50px" height="20px"> </td>
      <td bgcolor="yellow" width="50px" height="20px"> </td>
-
-
-   </tr>
+   </tr> -->
  </table>
 
- <script>function myFunction(){
+ <script>
    var tbl=document.getElementById("myTable");
-   var row = tbl.insertRow(tbl.rows.length) ;
+   var number = document.getElementById("numid") ;
+   var i=0;
+   var j=0;
+   var colors=['red','green','blue'];
+   //alert(colors[0]);
+   function myFunction(){
+     resetTable();
+     //tbl.insertRow();
+     console.log(number.value);
+     for(i=0;i< number.value;i++){
+      let row = tbl.insertRow(i);
+      //alert(i);
+      for(j=0;j<number.value;j++){
+        //alert(row);
+        let cell= row.insertCell(j);
+        if(j % 3 == 0){
+          cell.style.backgroundColor= colors[0];
+        }
+        elseif(j % 3 == 1){
+          cell.style.backgroundColor= colors[1];
 
-   for (i = 0; i < tbl.rows[0].cells.length; i++) {
-     createCell(row.insertCell(i), i, 'row');
- }
-}       
-function createCell(cell, text, style) {
- var div = document.createElement('div'),
-     txt = document.createTextNode(text);
- div.appendChild(txt);
- div.setAttribute('class', style);
- div.setAttribute('className', style);
- cell.appendChild(div);
-}
-function appendColumn() {
- var tbl = document.getElementById('myTable'),
-     i;
- for (i = 0; i < tbl.rows.length; i++) {
-     createCell(tbl.rows[i].insertCell(tbl.rows[i].cells.length), i, 'col');
- }
-}
+        }
+        if(j % 3 == 2){
+          cell.style.backgroundColor= colors[2];
+        }
+        cell.style.height="50px";
+        cell.style.width="50px";
+        cell.style.border="none";
+         //alert(j);
+      }
+     }
+   }
+  function resetTable(){
+    //alert("DELETING");
+    var num= document.getElementsByTagName('tr');
+    console.log("hello"+ num.length)
+    if(num.length !=0){
+      for(i=0;i<num.length;i++){
+        tbl.deleteRow(0);
+        console.log(i);
+        resetTable();
+        //console.log(num.value)
+      }
+    }
+  }
+
   </script>
   </body>
 </html>
