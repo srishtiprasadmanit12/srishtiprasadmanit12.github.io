@@ -3,18 +3,18 @@
   padding:0;
 }
 html{
-  background-color: #251f44;
+  background:linear-gradient(90deg,#1B67E8,#620963);
   text-align: center;
-
 }
+
 h1{
   color: white;
   margin-bottom: 1%;
+  font-family: 'Fredoka One', cursive;
   text-transform: uppercase;
 }
 .box{
   margin-top:5%;
-
 }
 .box input[type="number"]{
 font-size: 1.2em;
@@ -23,26 +23,45 @@ font-weight:normal;
 
 }
 .box input[type="submit"],.box input[type="reset"]{
-  border:2px solid #2ecc71;
-  height:30px;
-  width:5%;
+  border:1% solid #2ecc71;
+  height:10%;
+  width:6%;
   margin-top:2%;
-  text-align: center;
+  padding: 0.5%;
   cursor: pointer;
+  font-family:cursive;
+  font-weight: bold;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(101,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  border-radius: 10%;
 }
-.box input[type="submit"]:hover,.box input[type="reset"]:hover{
 
-background:#c3aed6;
+.box input[type="submit"]:hover,.box input[type="reset"]:hover{
+  color:white;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,88,1) 35%, rgba(0,212,255,1) 100%);
 }
 table{
-  margin-left: 40%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2%;
-  width:20%;
-
+  margin-bottom:5%;
+  width:80%;
 }
+
 table,td{
   border-color: #3c2946;
-  border-spacing: 2px;
+  border-spacing: 3%;
   border-style: ridge;
   background-color: #8675a9;
+  background: transparent;
+
+}
+@media only screen and (max-width: 768px){
+.box input[type="submit"],.box input[type="reset"]{
+ width:50px;
+ height:30px;
+
+}
+
 }
