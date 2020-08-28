@@ -7,11 +7,14 @@ html{
   text-align: center;
 }
 
-h1{
+h1,h2{
   color: white;
   margin-bottom: 1%;
   font-family: 'Fredoka One', cursive;
   text-transform: uppercase;
+}
+h2{
+  margin-top: 1%;
 }
 .box{
   margin-top:5%;
@@ -22,6 +25,13 @@ color:#004d00;
 font-weight:normal;
 
 }
+.box input[type="text"]{
+  font-size: 1.2em;
+  color:#004d00;
+  font-weight:normal;
+  margin-top: 1%;
+}
+
 .box input[type="submit"],.box input[type="reset"]{
   border:1% solid #2ecc71;
   height:10%;
