@@ -4,24 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width",initial-scale=1.0>
     <title>table</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
+    <section>
       <form  class="box" onsubmit="myFunction(); return false; required" onreset="resetTable();">
         <h1>input <span> number</span></h1>
         <input type="number" id="numid" min=1 placeholder="enter a number"></br>
-        <input type="submit" value="click here"/>
-        <input type="reset"  value="clear" id="reset"/>
+        <input type="submit" value="Enter"/>
+        <input type="reset"  value="Clear" id="reset"/>
       </form>
-    </div>
+
+    </section>
+
  <table border="0" id="myTable">
 <!-- <tr>
      <td bgcolor="yellow" width="50px" height="20px"> </td>
-     <td bgcolor="yellow" width="50px" height="20px"> </td>
-     <td bgcolor="yellow" width="50px" height="20px"> </td>
-     <td bgcolor="yellow" width="50px" height="20px"> </td>
-     <td bgcolor="yellow" width="50px" height="20px"> </td>
+    
    </tr> -->
  </table>
 
@@ -30,7 +31,7 @@
    var number = document.getElementById("numid") ;
    var i=0;
    var j=0;
-   var colors=['red','green','blue'];
+   var colors=['#fab7b7','#00a8cc','#be79df'];
    //alert(colors[0]);
    function myFunction(){
      resetTable();
@@ -40,20 +41,20 @@
       let row = tbl.insertRow(i);
       //alert(i);
       for(j=0;j<number.value;j++){
-        //alert(row);
+
         let cell= row.insertCell(j);
         if(j % 3 == 0){
           cell.style.backgroundColor= colors[0];
         }
-        else if(j % 3 == 1){
+         if(j % 3 == 1){
           cell.style.backgroundColor= colors[1];
 
         }
-        if(j % 3 == 2){
+        else if(j % 3 == 2){
           cell.style.backgroundColor= colors[2];
         }
         cell.style.height="50px";
-        cell.style.width="50px";
+        cell.style.width="100px";
         cell.style.border="none";
          //alert(j);
       }
@@ -76,3 +77,4 @@
   </script>
   </body>
 </html>
+
