@@ -13,8 +13,12 @@
       <form  class="box" onsubmit="myFunction(); return false; required" onreset="resetTable();">
         <h1>input <span> number</span></h1>
         <input type="number" id="numid" min=1 placeholder="enter a number"></br>
+          <h2>INPUT<span>COLOUR</span></h2>
+        <input type="text" placeholder="Firstcolor" id="colid" ></br>
+        <input type="text" placeholder="Secondcolor" id="colidd" ></br>
+        <input type="text" placeholder="Thirdcolor" id="coliddd" ></br>
         <input type="submit" value="Enter"/>
-        <input type="reset"  value="Clear" id="reset"/>
+        <input type="reset" value="Clear" id="reset"/>
       </form>
 
     </section>
@@ -22,16 +26,21 @@
  <table border="0" id="myTable">
 <!-- <tr>
      <td bgcolor="yellow" width="50px" height="20px"> </td>
-    
+
    </tr> -->
  </table>
 
  <script>
    var tbl=document.getElementById("myTable");
    var number = document.getElementById("numid") ;
+   var colour = document.getElementById("colid") ;
+   var colourr = document.getElementById("colidd") ;
+   var colourrr = document.getElementById("coliddd") ;
+
+
    var i=0;
    var j=0;
-   var colors=['#fab7b7','#00a8cc','#be79df'];
+   var colors=['#00a8cc','#be79df'];
    //alert(colors[0]);
    function myFunction(){
      resetTable();
@@ -44,14 +53,14 @@
 
         let cell= row.insertCell(j);
         if(j % 3 == 0){
-          cell.style.backgroundColor= colors[0];
+          cell.style.backgroundColor= colour.value;
         }
          if(j % 3 == 1){
-          cell.style.backgroundColor= colors[1];
+          cell.style.backgroundColor= colourr.value;
 
         }
         else if(j % 3 == 2){
-          cell.style.backgroundColor= colors[2];
+          cell.style.backgroundColor= colourrr.value ;
         }
         cell.style.height="50px";
         cell.style.width="100px";
@@ -77,4 +86,5 @@
   </script>
   </body>
 </html>
+
 
