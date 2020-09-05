@@ -3,7 +3,8 @@ html{
   z-index: -1;
 }
 .navbar{
-background-image: linear-gradient( 135.9deg,  rgba(109,25,252,1) 16.4%, rgba(125,31,165,1) 56.1% );
+background-image: linear-gradient( 107.2deg,  rgba(18,38,170,1) 12.9%, rgba(0,187,180,1) 77.6%, rgba(255,255,255,1) 125.9% );}
+
 }
 .navbar-brand{
   color:#fff;
@@ -27,4 +28,5 @@ p{
 }
 #second{
   padding:10%;
-background-image: linear-gradient( 135.9deg,  rgba(109,25,252,1) 16.4%, rgba(125,31,165,1) 56.1% );
+background-image: linear-gradient( 107.2deg,  rgba(18,38,170,1) 12.9%, rgba(0,187,180,1) 77.6%, rgba(255,255,255,1) 125.9% );}
+
