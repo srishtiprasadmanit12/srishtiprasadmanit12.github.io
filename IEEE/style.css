@@ -3,7 +3,6 @@ body{
   margin-right: :5%;
   margin-bottom:5%;
 background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
-
   color:white;
 }
 .srishti{
@@ -11,11 +10,11 @@ background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
   background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
 }
 .navbar{
-
   margin-top:0;
   margin-left: 0;
   color: white;
-background-image: linear-gradient( 107.2deg,  rgba(18,38,170,1) 12.9%, rgba(0,187,180,1) 77.6%, rgba(255,255,255,1) 125.9% );
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
 }
 .navbar-brand{
   color:#fff;
@@ -31,22 +30,36 @@ background-image: linear-gradient( 107.2deg,  rgba(18,38,170,1) 12.9%, rgba(0,18
   position:relative;
   z-index: 0;
 }
-h1{
+h1,h2,h3,h4,h5{
+font-family: 'Patua One', cursive;
+padding: 1%;
 
+}
+h1{
+  font-size: 300%;
 }
 .coordinatorheading{
   padding:50px;
 }
 h4{
-  font-size: 1.5rem;
+  font-size:165%;
 }
 p{
+  font-family: 'Aclonica', sans-serif;
   font-size: 1rem;
+}
+.navtext{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.img-nav{
+  width:4%;
+}
+.navtext : hover{
+  color:#440047;
 }
 .rowsetting{
 padding-top:50px;
-
-
 }
 .imgsetting{
   border-radius: 50%;
@@ -80,10 +93,7 @@ margin:50px;
   box-sizing: border-box;
   border-radius: 30px;
   text-decoration: none;
-  background: #00416A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFE000, #799F0C, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFE000, #799F0C, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+background-image: linear-gradient( 114.2deg,  rgba(121,194,243,1) 22.6%, rgba(255,180,239,1) 67.7% );
 
 padding:0.5%;
 }
@@ -96,6 +106,13 @@ font-weight: bold;
 text-shadow: 30px;
 
 }
+.carousel-item{
+background-size: cover;
+}
+.register{
+  text-align: center;
+}
+
 /*form css*/
 marquee{
       font-size: 30px;
