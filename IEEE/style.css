@@ -200,7 +200,7 @@ a:before{
   transition: 0.25s;
 }
 .box input[type="text"]:focus,.box input[type="email"]:focus,.box input[type="number"]:focus{
-  width:280px;
+  width:230px;
   border-color: #4CC417;
 }
 
