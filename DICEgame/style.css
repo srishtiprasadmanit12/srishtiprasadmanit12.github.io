@@ -1,0 +1,50 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-image: url("image/dicebg.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+h2{
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 6rem;
+  color: #4ECCA3;
+}
+h1 {
+  margin: 30px;
+font-family: 'Luckiest Guy', cursive;  text-shadow: 5px 0 #232931;
+  font-size: 5rem;
+  color: #4ECCA3;
+}
+
+p {
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'Piedra', cursive;
+}
+
+img {
+  width: 50%;
+  z-index: 2;
+  position: relative;
+}
+
+footer {
+  margin-top: 4%;
+  color: black;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
